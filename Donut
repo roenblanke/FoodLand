@@ -1,0 +1,20 @@
+package objectori;
+
+public class Donut {
+
+    //member variables
+    private int percRemaining = 100;
+    public String name;
+    public boolean frosting;
+    public String frostingColor;
+
+    public void simulateEating(int percEaten) {
+        percRemaining = percRemaining - percEaten;
+        System.out.println("wawaweewa, I love eating donuts!");
+    }//close method
+
+    public int getPercRemaining() {
+        return percRemaining;
+    }//close method
+
+}//close class 
