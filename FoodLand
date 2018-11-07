@@ -1,0 +1,44 @@
+package objectori;
+
+
+public class FoodLand {
+
+    public static void main(String [] args){
+        
+        //instaniate our  donut object and fill in member vars
+        Donut firstDonut;
+        firstDonut = new Donut();
+        firstDonut.name = "Henry";
+        firstDonut.frosting = true;
+        firstDonut.frostingColor = "blue";
+        
+        //instantiate our soup and fill in member vars
+        Soup firstSoup;
+        firstSoup = new Soup();
+        firstSoup.calories = 300;
+        firstSoup.hot = true;
+        firstSoup.name = "French Onion";
+        
+        //instantiate our sandwich and fill in member vars
+        Sandwich reuben;
+        reuben = new Sandwich();
+        reuben.name = "Reuben";
+        reuben.lengthRemaining = 12;
+        reuben.veg = false;
+        reuben.slicesOfMeat = 6;
+        
+        //call reuben methods
+        reuben.share(3);
+        reuben.getLength();
+        
+        //call donut methods
+        firstDonut.simulateEating(89);
+        firstDonut.getPercRemaining();
+        
+        //call soup methods
+        firstSoup.slurpSoup(4);
+        firstSoup.getPercRemaining();
+        
+    }//close main method
+    
+}
