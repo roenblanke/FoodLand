@@ -1,0 +1,17 @@
+package objectori;
+
+public class Soup {
+    public int percRemaining = 100;
+    public String name;
+    public boolean hot;
+    public double calories;
+    
+    public void slurpSoup(int slurpSize){
+        percRemaining = percRemaining - slurpSize;
+        System.out.println("*Slurps*");
+    }//close method
+    
+    public int getPercRemaining(){
+        return percRemaining;
+    }//close method
+}
