@@ -1,0 +1,19 @@
+package objectori;
+
+public class Sandwich {
+    public double lengthRemaining;
+    public boolean veg;
+    public int slicesOfMeat;
+    public String name;
+    
+    public void share(int numFriends){
+        lengthRemaining = lengthRemaining/numFriends;
+        slicesOfMeat = slicesOfMeat/numFriends;
+        System.out.println("Sharing is cool!");
+    }//close method
+    
+    public double getLength(){
+        return lengthRemaining;
+    }//close method
+}
+  
